@@ -16,12 +16,12 @@ const Frame = ({ location }: FrameProps) => {
   return (
     <Menu>
       <Menu.Heading>GraphQL Demo</Menu.Heading>
-      <StyledLink to='/activity'>
+      <StyledLink to='/activity/passes'>
         <Menu.Item active={menuHelpers.isActiveItem([/activity/g], location.pathname)}>Activity</Menu.Item>
       </StyledLink>
-      <StyledLink to='/sites'>
+      {/* <StyledLink to='/sites'>
         <Menu.Item active={menuHelpers.isActiveItem([/sites/g], location.pathname)}>Sites</Menu.Item>
-      </StyledLink>
+      </StyledLink> */}
       <StyledLink to='/users'>
         <Menu.Item active={menuHelpers.isActiveItem([/users/g], location.pathname)}>Users</Menu.Item>
       </StyledLink>
